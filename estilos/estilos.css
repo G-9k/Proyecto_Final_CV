@@ -1,3 +1,9 @@
+
+*{
+  font-family: 'Merriweather', serif;
+  font-family: 'Ubuntu', sans-serif;
+}
+
 body{
     background: #0048BA;
     background: -moz-linear-gradient(top, #0048BA 0%, #B3F2FF 100%);
@@ -10,7 +16,7 @@ body{
     font-size: 100px;
     text-align: center;
     margin-top: 100px;
-    margin-bottom: 150px;
+    margin-bottom: 200px;
     animation: fadeIn 5s;
     -webkit-animation: fadeIn 5s;
     -moz-animation: fadeIn 5s;
@@ -82,12 +88,17 @@ body{
 
 #nombre_ejemplo{
     text-align: center;
-    font-size: 30px;
+    font-size: 50px;
+    display: table-cell;
+    width: 500px;
+    height: 226px;
+    vertical-align: middle;
 }
 
 #imagen{
     border: solid black;
     padding: 10px;
+    width: 400px;
 }
 
 #contenido_izquierdo{
@@ -101,3 +112,16 @@ body{
     border: solid black;
     padding-right: 10px;
 }
+
+#div_nom_ej{
+  border: solid black;
+  width: 500px;
+}
+
+#titulo_contacto{
+  margin-top: 20px;
+  text-align: left;
+  
+}
+
+
