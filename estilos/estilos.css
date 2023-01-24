@@ -175,8 +175,8 @@ body{
 }
 
 #div_reestablecer{
-  margin-top: 50px;
-  display: flex;
+  margin-top: 30px;
+  margin-bottom: 100px;
   justify-content: center;
   display: none;
 
@@ -192,14 +192,32 @@ body{
 
 #div_submit{
   margin-top: 50px;
-  margin-bottom: 100px;
-  display: flex;
   justify-content: center;
   display: none;
+
+}
+
+#div_limpiar{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  display: none;
+  justify-content: center;
 
 }
 
 #formulario{
   display: none;
   margin-left: 50px;
+}
+
+#form_acad_input2{
+  display: none;
+}
+
+#menos_form_acad{
+  display: none;
+}
+
+#mas_idiomas2, #menos_idiomas1, #menos_idiomas2, #idiomas_input2, #idiomas_input3{
+  display: none;
 }

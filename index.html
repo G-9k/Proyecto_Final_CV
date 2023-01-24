@@ -44,7 +44,7 @@
                     <ul>
                         <li id="e-mail">E-mail: angel.sanders@example.com</li>
                         <li id="numero">Número celular: (437) 717-2057</li>
-                        <li id="direccion">Dirección: 430 Prospect Rd</li>
+                        <li id="dirección">Dirección: 430 Prospect Rd</li>
                     </ul>
                 </div>
                     
@@ -107,11 +107,11 @@
                 <div id="capacidades">
                     <h3 id="titulo_capacidades"><strong>Capacidades</strong></h3>
                     <ul>
-                        <li id="cap_1">Programación front-end</li>
-                        <li id="cap_2">Programación en C++</li>
-                        <li id="cap_3">Manejo de varios sistemas operativos</li>
-                        <li id="cap_4">Experto en todo el paquete Office</li>
-                        <li id="cap_5">Manejo de AutoCad</li>
+                        <li id="texto_cap1">Programación front-end</li>
+                        <li id="texto_cap2">Programación en C++</li>
+                        <li id="texto_cap3">Manejo de varios sistemas operativos</li>
+                        <li id="texto_cap4">Experto en todo el paquete Office</li>
+                        <li id="texto_cap5">Manejo de AutoCad</li>
                     </ul>
                 </div>
 
@@ -130,63 +130,71 @@
             <br>
 
             <label>Nombre y Apellido</label>
-            <input type="text" id="nombre_input" placeholder="Ingrese un Nombre" value="Angel Sanders"/>
+            <input type="text" class="input" id="nombre_input" placeholder="Ingrese un Nombre" value="Angel Sanders"/>
             <br>
 
             <label>E-mail</label>
-            <input type="email" id="email_input" placeholder="Ingrese un Email"/>
+            <input type="email" class="input" id="email_input" placeholder="Ingrese un Email" value="angel.sanders@example.com"/>
             <br>
 
             <label>Número celular</label>
-            <input type="tel" id="num_cel_input" placeholder="Ingrese un número celular"/>
+            <input type="tel" class="input" id="num_cel_input" placeholder="Ingrese un número celular" value="(437) 717-2057"/>
             <br>
 
             <label>Dirección</label>
-            <input type="text" id="dirección_input" placeholder="Ingrese una dirección"/>
+            <input type="text" class="input" id="dirección_input" placeholder="Ingrese una dirección" value="430 Prospect Rd"/>
             <br>
 
+            <div class="row justify-content-center">
             <label>Formación Academica</label>
-            <input type="text" id="form_acad_input1" placeholder="Ingrese algún título academico"/>
-            <input type="text" id="form_acad_input2" placeholder="Ingrese algún título academico"/>
+            <input type="text" class="input" id="form_acad_input1" placeholder="Ingrese algún título academico" value="Graduado de Harvard: Doctorado en Ciencias de la Computación"/>
+            <button type="button" id="mas_form_acad">+</button>
+            <input type="text" class="input" id="form_acad_input2" placeholder="Ingrese algún título academico" value="Master en el MIT de base de datos"/>
+            <button type="button" id="menos_form_acad">-</button>
+            </div>
             <br>
 
             <label>Idiomas</label>
-            <input type="text" id="idiomas_input1" placeholder="Ingrese algún Idioma"/>
-            <input type="text" id="idiomas_input2" placeholder="Ingrese algún Idioma"/>
-            <input type="text" id="idiomas_input3" placeholder="Ingrese algún Idioma"/>
+            <input type="text" class="input" id="idiomas_input1" placeholder="Ingrese algún Idioma" value="Ingles avanzado C1 certificado por Cambridge"/>
+            <button type="button" id="mas_idiomas1">+</button>
+            <input type="text" class="input" id="idiomas_input2" placeholder="Ingrese algún Idioma" value="Español"/>
+            <button type="button" id="mas_idiomas2">+</button>
+            <button type="button" id="menos_idiomas1">-</button>
+            <input type="text" class="input" id="idiomas_input3" placeholder="Ingrese algún Idioma" value="Frances"/>
+            <button type="button" id="menos_idiomas2">-</button>
             <br>
 
             <label>Pasatiempos</label>
-            <input type="text" id="pasatiempos_input" placeholder="Ingrese algún pasatiempo"/>
+            <input type="text" class="input" id="pasatiempos_input" placeholder="Ingrese algún pasatiempo" value="Aficionado del tenis, me gusta la música, se tocar el bajo y toco en un club los fin de semanas."/>
             <br>
 
             <label>Fecha de nacimiento</label>
-            <input type="date" id="fecha_nac_input" placeholder="Ingrese una fecha"/>
+            <input type="date" class="input" id="fecha_nac_input" placeholder="Ingrese una fecha" value= 1964-07-04 />
             <br>
 
             <label>Nacionalidad</label>
-            <input type="text" id="nacionalidad_input" placeholder="Ingrese un país"/>
+            <input type="text" class="input" id="nacionalidad_input" placeholder="Ingrese un país" value="Estados Unidos"/>
             <br>
 
-
+            
             <label>Experiencia Laboral</label>
-            <input type="text" id="exp_lab_input1" placeholder="Ingrese su Experiencia Laboral"/>
-            <input type="text" id="exp_lab_input2" placeholder="Ingrese su Experiencia Laboral"/>
-            <input type="text" id="exp_lab_input3" placeholder="Ingrese su Experiencia Laboral"/>
+            <input type="text" class="input" id="exp_lab_input1" placeholder="Ingrese su Experiencia Laboral" value="Desarrollador de Google por 4 años"/>
+            <input type="text" class="input" id="exp_lab_input2" placeholder="Ingrese su Experiencia Laboral" value="Mantenimiento de servidores de Amazon por 2 años"/>
+            <input type="text" class="input" id="exp_lab_input3" placeholder="Ingrese su Experiencia Laboral" value="Empleado en el area de sistemas de Toyota 6 años"/>
             <br>
 
             <label>Logros Personales</label>
-            <input type="text" id="log_per_input1" placeholder="Ingrese logros personales"/>
-            <input type="text" id="log_per_input2" placeholder="Ingrese logros personales"/>
-            <input type="text" id="log_per_input3" placeholder="Ingrese logros personales"/>
+            <input type="text" class="input" id="log_per_input1" placeholder="Ingrese logros personales" value="Sub-campeón en torneo de programación"/>
+            <input type="text" class="input" id="log_per_input2" placeholder="Ingrese logros personales" value="Publicación de un libro"/>
+            <input type="text" class="input" id="log_per_input3" placeholder="Ingrese logros personales" value="Publicación de un álbum musical"/>
             <br>
 
             <label>Capacidades</label>
-            <input type="text" id="cap_input1" placeholder="Ingrese alguna de sus capacidades"/>
-            <input type="text" id="cap_input2" placeholder="Ingrese alguna de sus capacidades"/>
-            <input type="text" id="cap_input3" placeholder="Ingrese alguna de sus capacidades"/>
-            <input type="text" id="cap_input4" placeholder="Ingrese alguna de sus capacidades"/>
-            <input type="text" id="cap_input5" placeholder="Ingrese alguna de sus capacidades"/>
+            <input type="text" class="input" id="cap_input1" placeholder="Ingrese alguna de sus capacidades" value="Programación front-end"/>
+            <input type="text" class="input" id="cap_input2" placeholder="Ingrese alguna de sus capacidades" value="Programación en C++"/>
+            <input type="text" class="input" id="cap_input3" placeholder="Ingrese alguna de sus capacidades" value="Manejo de varios sistemas operativos"/>
+            <input type="text" class="input" id="cap_input4" placeholder="Ingrese alguna de sus capacidades" value="Experto en todo el paquete Office"/>
+            <input type="text" class="input" id="cap_input5" placeholder="Ingrese alguna de sus capacidades" value="Manejo de AutoCad"/>
             <br>
 
         </form>
@@ -198,16 +206,17 @@
         <button type="button" id="empezar">Empezar</button>
     </div>
 
-    <div id="div_reestablecer">
-        <button type="button" id="reestablecer">Reestablecer Cambios</button>
-    </div>
-
     <div id="div_submit">
         <button type="button" id="submit">Listo</button>
     </div>
- 
 
+    <div id="div_limpiar">
+        <button type="button" id="limpiar">Limpiar</button>
+    </div>
 
+    <div id="div_reestablecer">
+        <button type="button" id="reestablecer">Reestablecer Cambios</button>
+    </div>
 
 
     <script src="funciones/funciones.js"></script>
