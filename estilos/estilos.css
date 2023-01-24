@@ -86,6 +86,15 @@ body{
     100% { opacity: 1; }
   }
 
+
+
+#div_nom_ej{
+  background-color: rgb(53, 80, 129);
+  border-top: solid black;
+  border-right: solid black;
+  width: 500px;
+}
+
 #nombre_ejemplo{
     text-align: center;
     font-size: 50px;
@@ -93,35 +102,72 @@ body{
     width: 500px;
     height: 226px;
     vertical-align: middle;
+    color: white;
 }
 
 #imagen{
-    border: solid black;
+    border-top: solid black;
+    border-left: solid black;
     padding: 10px;
     width: 400px;
+    background-color: rgb(53, 80, 129);
 }
 
 #contenido_izquierdo{
     width: 400px;
-    border: solid black;
+    border-left: solid black;
+    border-bottom: solid black;
     padding-right: 10px;
+    background-color: beige;
 }
 
 #contenido_derecho{
     width: 500px;
-    border: solid black;
+    border-right: solid black;
+    border-bottom: solid black;
     padding-right: 10px;
-}
-
-#div_nom_ej{
-  border: solid black;
-  width: 500px;
+    background-color: whitesmoke;
 }
 
 #titulo_contacto{
   margin-top: 20px;
-  text-align: left;
-  
 }
 
+
+#contenido_izquierdo p{
+  text-align: left;
+  margin-left: 10px;
+}
+
+#contenido_izquierdo h3{
+  text-align: left;
+  margin-top: 40px;
+  margin-left: 10px;
+}
+
+.texto_izquierdo{
+  margin-top: 20px;
+}
+
+
+#contenido_derecho p{
+  text-align: left;
+  margin-left: 10px;
+}
+
+#contenido_derecho h3{
+  text-align: left;
+  margin-top: 40px;
+  margin-left: 10px;
+}
+
+#contenido_derecho ul{
+  text-align: left;
+  margin-top: 20px;
+}
+
+#contenido_izquierdo ul{
+  text-align: left;
+  margin-top: 20px;
+}
 
