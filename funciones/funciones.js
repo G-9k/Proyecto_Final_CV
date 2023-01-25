@@ -1,4 +1,5 @@
 
+//Botón empezar
 document.getElementById('empezar').onclick = function(){
     console.log("Efectivamente hiciste click en empezar");
     document.getElementById('ejemplo_de_cv').style.display = 'none';
@@ -7,17 +8,19 @@ document.getElementById('empezar').onclick = function(){
     document.getElementById('div_submit').style.display = 'flex';
     document.getElementById('div_limpiar').style.display = 'flex';
     document.getElementById('formulario').style.display = 'flex';
-
 }
 
-
+//Botón reestablecer
 document.getElementById('reestablecer').onclick = function(){
-    console.log("Efectivamente hiciste click en reestablecer");
-    window.location.reload();
-
+    if (confirm('Esto recargará la página ¿Estás seguro de querer reestablecer los cambios?')) {
+        console.log('Efectivamente hiciste click en reestablecer.');
+        window.location.reload();
+      } else {
+        console.log('Efectivamente hiciste click en reestablecer pero te arrepentiste.');
+      }
 }
 
-
+//Botón limpiar
 document.getElementById('limpiar').onclick = function(){
     console.log("Efectivamente hiciste click en limpiar");
     const collection = document.getElementsByClassName("input");
@@ -26,6 +29,7 @@ document.getElementById('limpiar').onclick = function(){
     }
 }
 
+//Botón listo
 document.getElementById('submit').onclick = function(){
     console.log("Efectivamente hiciste click en submit");
     document.getElementById('ejemplo_de_cv').style.display = 'block';
@@ -36,8 +40,8 @@ document.getElementById('submit').onclick = function(){
     document.getElementById('formulario').style.display = 'none';
     cambiarTodo();
     comparar();
-
 }
+
 
 function cambiarTodo(){
     //cambiar nombre
@@ -124,26 +128,11 @@ function cambiarTodo(){
 }
 
 
-
-//para cargar la imagen
-window.addEventListener('load', function() {
-    document.querySelector('input[type="file"]').addEventListener('change', function() {
-        if (this.files && this.files[0]) {
-            var img = document.querySelector('img');
-            img.onload = () => {
-                URL.revokeObjectURL(img.src);  // no longer needed, free memory
-            }
-            img.src = URL.createObjectURL(this.files[0]); // set src to blob url
-        }
-    });
-  });
-
-
 function comparar(){
 
-    /*verificacion de texto presente en formación academica. Esto lo hago para que en el caso de que solo se complete
-    uno de los dos campos, el segundo campo ni se muestre. De lo contrario, aunque este vacio, el punto se seguiría viendo
-    ademas esto permite que en el caso de completar solo un campo cualquiera y dejar los demas vacios, se mostrara igual sin importar cual se haya completado*/
+    /*verificacion de texto en formación academica. Esto lo hago para que en el caso de que solo se complete uno de los dos campos, 
+    el segundo campo de texto ni se muestre. De lo contrario, aunque este vacio, el punto se seguiría viendo, ademas esto permite que 
+    en el caso de completar solo un campo cualquiera y dejar los demas vacios, se mostrara de la misma forma sin importar cual se haya completado*/
     var text1 = document.getElementById("form_acad_input1").value;
     var text2 = document.getElementById("form_acad_input2").value;
 
@@ -271,3 +260,19 @@ function comparar(){
     }
 
 }
+
+
+//para cargar la imagen
+window.addEventListener('load', function() {
+    document.querySelector('input[type="file"]').addEventListener('change', function() {
+        if (this.files && this.files[0]) {
+            var img = document.querySelector('img');
+            img.onload = () => {
+                URL.revokeObjectURL(img.src);  // no longer needed, free memory
+            }
+            img.src = URL.createObjectURL(this.files[0]); // set src to blob url
+        }
+    });
+});
+
+

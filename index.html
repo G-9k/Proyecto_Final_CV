@@ -122,67 +122,68 @@
     </main>
 
 
-    <section id="formulario">
+    <section id="formulario" class="row justify-content">
 
-        <form action="">
-            <label>Cambiar foto de perfil:</label>
+        <form action="" class="col-sm-auto">
+            <label class="label_form">Foto de perfil:</label>
             <input type='file' id="foto_input" />
+            <span id="aclaracion">(Asegurese que la relación de aspecto sea cuadrada, de lo contrario la imágen se verá distorsionada)</span>
             <br>
 
-            <label>Nombre y Apellido:</label>
+            <label class="label_form">Nombre y Apellido:</label>
             <input type="text" class="input" id="nombre_input" placeholder="Ingrese un Nombre" value="Angel Sanders"/>
             <br>
 
-            <label>E-mail:</label>
+            <label class="label_form">E-mail:</label>
             <input type="email" class="input" id="email_input" placeholder="Ingrese un Email" value="angel.sanders@example.com"/>
             <br>
 
-            <label>Número celular:</label>
+            <label class="label_form">Número celular:</label>
             <input type="tel" class="input" id="num_cel_input" placeholder="Ingrese un número celular" value="(437) 717-2057"/>
             <br>
 
-            <label>Dirección:</label>
+            <label class="label_form">Dirección:</label>
             <input type="text" class="input" id="dirección_input" placeholder="Ingrese una dirección" value="430 Prospect Rd"/>
             <br>
 
 
-            <label>Formación Academica:</label>
+            <label class="label_form">Formación Academica:</label>
             <input type="text" class="input" id="form_acad_input1" placeholder="Ingrese algún título academico" value="Graduado de Harvard: Doctorado en Ciencias de la Computación"/>
             <input type="text" class="input" id="form_acad_input2" placeholder="Ingrese algún título academico" value="Master en el MIT de base de datos"/>
             <br>
 
-            <label>Idiomas:</label>
+            <label class="label_form">Idiomas:</label>
             <input type="text" class="input" id="idiomas_input1" placeholder="Ingrese algún Idioma" value="Ingles avanzado C1 certificado por Cambridge"/>
             <input type="text" class="input" id="idiomas_input2" placeholder="Ingrese algún Idioma" value="Español"/>
             <input type="text" class="input" id="idiomas_input3" placeholder="Ingrese algún Idioma" value="Frances"/>
             <br>
 
-            <label id="label_pasatiempos">Pasatiempos:</label>
+            <label class="label_form">Pasatiempos:</label>
             <textarea type="text" class="input" id="pasatiempos_input" placeholder="Ingrese algún pasatiempo">Aficionado del tenis, me gusta la música, se tocar el bajo y toco en un club los fin de semanas.</textarea>
             <br>
 
-            <label>Fecha de nacimiento:</label>
+            <label class="label_form">Fecha de nacimiento:</label>
             <input type="date" class="input" id="fecha_nac_input" placeholder="Ingrese una fecha" value= 1964-07-04 />
             <br>
 
-            <label>Nacionalidad:</label>
+            <label class="label_form">Nacionalidad:</label>
             <input type="text" class="input" id="nacionalidad_input" placeholder="Ingrese un país" value="Estados Unidos"/>
             <br>
 
             
-            <label>Experiencia Laboral:</label>
+            <label class="label_form">Experiencia Laboral:</label>
             <input type="text" class="input" id="exp_lab_input1" placeholder="Ingrese su Experiencia Laboral" value="Desarrollador de Google por 4 años"/>
             <input type="text" class="input" id="exp_lab_input2" placeholder="Ingrese su Experiencia Laboral" value="Mantenimiento de servidores de Amazon por 2 años"/>
             <input type="text" class="input" id="exp_lab_input3" placeholder="Ingrese su Experiencia Laboral" value="Empleado en el area de sistemas de Toyota 6 años"/>
             <br>
 
-            <label>Logros Personales:</label>
+            <label class="label_form">Logros Personales:</label>
             <input type="text" class="input" id="log_per_input1" placeholder="Ingrese logros personales" value="Sub-campeón en torneo de programación"/>
             <input type="text" class="input" id="log_per_input2" placeholder="Ingrese logros personales" value="Publicación de un libro"/>
             <input type="text" class="input" id="log_per_input3" placeholder="Ingrese logros personales" value="Publicación de un álbum musical"/>
             <br>
 
-            <label>Capacidades:</label>
+            <label class="label_form">Capacidades:</label>
             <input type="text" class="input" id="cap_input1" placeholder="Ingrese alguna de sus capacidades" value="Programación front-end"/>
             <input type="text" class="input" id="cap_input2" placeholder="Ingrese alguna de sus capacidades" value="Programación en C++"/>
             <input type="text" class="input" id="cap_input3" placeholder="Ingrese alguna de sus capacidades" value="Manejo de varios sistemas operativos"/>
@@ -195,20 +196,20 @@
     </section>
 
 
-    <div id="div_empezar">
-        <button type="button" id="empezar">Empezar</button>
+    <div id="div_empezar" class="fade-in-content">
+        <button type="button" class="boton" id="empezar">Empezar</button>
     </div>
 
     <div id="div_submit">
-        <button type="button" id="submit">Listo</button>
+        <button type="button" class="boton" id="submit">Listo</button>
     </div>
 
     <div id="div_limpiar">
-        <button type="button" id="limpiar">Limpiar</button>
+        <button type="button" class="boton" id="limpiar">Limpiar</button>
     </div>
 
     <div id="div_reestablecer">
-        <button type="button" id="reestablecer">Reestablecer Cambios</button>
+        <button type="button" class="boton" id="reestablecer">Reestablecer Cambios</button>
     </div>
 
 
