@@ -35,6 +35,7 @@ document.getElementById('submit').onclick = function(){
     document.getElementById('div_limpiar').style.display = 'none';
     document.getElementById('formulario').style.display = 'none';
     cambiarTodo();
+    comparar();
 
 }
 
@@ -124,7 +125,7 @@ function cambiarTodo(){
 
 
 
-
+//para cargar la imagen
 window.addEventListener('load', function() {
     document.querySelector('input[type="file"]').addEventListener('change', function() {
         if (this.files && this.files[0]) {
@@ -138,22 +139,135 @@ window.addEventListener('load', function() {
   });
 
 
-document.getElementById('mas_form_acad').onclick = function(){
-    document.getElementById('form_acad_input2').style.display = 'block';
-    document.getElementById('mas_form_acad').style.display = 'none';
-    document.getElementById('menos_form_acad').style.display = 'block';
-}
+function comparar(){
 
-document.getElementById('menos_form_acad').onclick = function(){
-    document.getElementById('form_acad_input2').style.display = 'none';
-    document.getElementById('mas_form_acad').style.display = 'block';
-    document.getElementById('menos_form_acad').style.display = 'none';
-}
+    /*verificacion de texto presente en formación academica. Esto lo hago para que en el caso de que solo se complete
+    uno de los dos campos, el segundo campo ni se muestre. De lo contrario, aunque este vacio, el punto se seguiría viendo
+    ademas esto permite que en el caso de completar solo un campo cualquiera y dejar los demas vacios, se mostrara igual sin importar cual se haya completado*/
+    var text1 = document.getElementById("form_acad_input1").value;
+    var text2 = document.getElementById("form_acad_input2").value;
 
-document.getElementById('mas_idiomas1').onclick = function(){
-    document.getElementById('idiomas_input2').style.display = 'block';
-    document.getElementById('mas_idiomas1').style.display = 'none';
-    document.getElementById('mas_idiomas2').style.display = 'block';
-    document.getElementById('menos_idiomas1').style.display = 'block';
-}
+    if (text1 == "") {
+        document.getElementById('texto_for_acad1').hidden = true;
+    }
+    else{
+        document.getElementById('texto_for_acad1').hidden = false;
+    }
+    if (text2 == "") {
+        document.getElementById('texto_for_acad2').hidden = true;
+    }
+    else{
+        document.getElementById('texto_for_acad2').hidden = false;
+    }
 
+    //verificacion de texto en idiomas.
+    var text3 = document.getElementById("idiomas_input1").value;
+    var text4 = document.getElementById("idiomas_input2").value;
+    var text5 = document.getElementById("idiomas_input3").value;
+
+    if (text3 == "") {
+        document.getElementById('texto_idiomas1').hidden = true;
+    }
+    else{
+        document.getElementById('texto_idiomas1').hidden = false;
+    }
+    if (text4 == "") {
+        document.getElementById('texto_idiomas2').hidden = true;
+    }
+    else{
+        document.getElementById('texto_idiomas2').hidden = false;
+    }    
+    if (text5 == "") {
+        document.getElementById('texto_idiomas3').hidden = true;
+    }
+    else{
+        document.getElementById('texto_idiomas3').hidden = false;
+    }
+
+    //verificacion de texto en experiencia laboral
+    var text6 = document.getElementById("exp_lab_input1").value;
+    var text7 = document.getElementById("exp_lab_input2").value;
+    var text8 = document.getElementById("exp_lab_input3").value;
+
+    if (text6 == "") {
+        document.getElementById('texto_exp_laboral1').hidden = true;
+    }
+    else{
+        document.getElementById('texto_exp_laboral1').hidden = false;
+    }
+    if (text7 == "") {
+        document.getElementById('texto_exp_laboral2').hidden = true;
+    }
+    else{
+        document.getElementById('texto_exp_laboral2').hidden = false;
+    }    
+    if (text8 == "") {
+        document.getElementById('texto_exp_laboral3').hidden = true;
+    }
+    else{
+        document.getElementById('texto_exp_laboral3').hidden = false;
+    }
+
+    //verificacion de texto en logros personales
+    var text9 = document.getElementById("log_per_input1").value;
+    var text10 = document.getElementById("log_per_input2").value;
+    var text11 = document.getElementById("log_per_input3").value;
+
+    if (text9 == "") {
+        document.getElementById('texto_logros1').hidden = true;
+    }
+    else{
+        document.getElementById('texto_logros1').hidden = false;
+    }
+    if (text10 == "") {
+        document.getElementById('texto_logros2').hidden = true;
+    }
+    else{
+        document.getElementById('texto_logros2').hidden = false;
+    }    
+    if (text11 == "") {
+        document.getElementById('texto_logros3').hidden = true;
+    }
+    else{
+        document.getElementById('texto_logros3').hidden = false;
+    }
+
+    //verificacion de texto en logros personales
+    var text12 = document.getElementById("cap_input1").value;
+    var text13 = document.getElementById("cap_input2").value;
+    var text14 = document.getElementById("cap_input3").value;
+    var text15 = document.getElementById("cap_input4").value;
+    var text16 = document.getElementById("cap_input5").value;
+
+    if (text12 == "") {
+        document.getElementById('texto_cap1').hidden = true;
+    }
+    else{
+        document.getElementById('texto_cap1').hidden = false;
+    }
+    if (text13 == "") {
+        document.getElementById('texto_cap2').hidden = true;
+    }
+    else{
+        document.getElementById('texto_cap2').hidden = false;
+    }    
+    if (text14 == "") {
+        document.getElementById('texto_cap3').hidden = true;
+    }
+    else{
+        document.getElementById('texto_cap3').hidden = false;
+    }
+    if (text15 == "") {
+        document.getElementById('texto_cap4').hidden = true;
+    }
+    else{
+        document.getElementById('texto_cap4').hidden = false;
+    }    
+    if (text16 == "") {
+        document.getElementById('texto_cap5').hidden = true;
+    }
+    else{
+        document.getElementById('texto_cap5').hidden = false;
+    }
+
+}

@@ -208,16 +208,36 @@ body{
 #formulario{
   display: none;
   margin-left: 50px;
+
 }
 
-#form_acad_input2{
-  display: none;
+#nombre_input, #email_input, #num_cel_input, #dirección_input, #form_acad_input1, #idiomas_input1, #pasatiempos_input, #fecha_nac_input, #nacionalidad_input, #exp_lab_input1, #log_per_input1, #cap_input1{
+  margin-top: 20px;
 }
 
-#menos_form_acad{
-  display: none;
+
+#form_acad_input1, #form_acad_input2{
+  width: 500px;
 }
 
-#mas_idiomas2, #menos_idiomas1, #menos_idiomas2, #idiomas_input2, #idiomas_input3{
-  display: none;
+#idiomas_input1, #idiomas_input2, #idiomas_input3{
+  width: 400px;
+}
+
+#pasatiempos_input{
+  resize: both;
+  width: 1200px;
+  height: 60px;
+}
+
+#exp_lab_input1, #exp_lab_input2, #exp_lab_input3{
+  width: 300px;
+}
+
+#log_per_input1, #log_per_input2, #log_per_input3{
+  width: 300px;
+}
+
+#cap_input1, #cap_input2, #cap_input3, #cap_input4, #cap_input5{
+  width: 300px;
 }
